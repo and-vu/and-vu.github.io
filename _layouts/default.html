@@ -24,9 +24,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto">
-            {% for text, link in site.navbar-links %}
+            {% for item in site.navbar-links %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ link }}">{{ text }}</a>
+              <a class="nav-link" href="{{ item[1] }}">{{ item[0] }}</a>
             </li>
             {% endfor %}
           </ul>
