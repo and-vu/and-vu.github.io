@@ -2,18 +2,15 @@
 layout: default
 title: GloBot
 ---
+# Trajectory Optimization for 12-DOF Robot Arm
 
-## ME2110: Competition Robot 
+Developed a **model-free nonlinear trajectory optimization** algorithm for a 12 DOF robotic arm using a kinematic model.
 
-This is a competition robot we made for class 
+---
 
-### Media
-- ![Simulation GIF](/assets/images/proj1-sim.gif)
-- <video width="100%" controls>
+## Media
+- ![Simulation](/assets/images/proj1-sim.gif)
+
+<video width="100%" controls>
   <source src="/assets/videos/proj1.mp4" type="video/mp4">
 </video>
-
-### Skills
-- 🧠 Optimization
-- 🤖 Robotics
-- 📊 Python
