@@ -1,3 +1,17 @@
-    theme: jekyll-theme-minimal
-    title: Hi! I'm Andy Vu 
-    description: A Master's Mechanical Engineering Student at CMU
+title: "Hi! I'm Andy Vu"
+description: "A Master's Mechanical Engineering Student at CMU"
+theme: jekyll-theme-minimal
+
+# Navigation bar links
+navbar-links:
+  Home: "/"
+  About: "/about"
+  Experience: "/experience"
+  Projects: "/projects"
+  Research: "/research"
+
+# Include extra folders in build
+include:
+  - assets
+  - projects
+  - research
