@@ -3,11 +3,12 @@ description: "A Master's Mechanical Engineering Student at CMU"
 theme: jekyll-theme-minimal
 
 navbar-links:
-  Home: "/"
-  About: "/about"
-  Experience: "/experience"
-  Projects: "/projects"
-  Research: "/research"
+  - text: "Home"
+    url: "/"
+  - text: "Projects"
+    url: "/projects/"
+  - text: "About"
+    url: "/about/"
 
 include:
   - assets
