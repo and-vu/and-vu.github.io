@@ -12,7 +12,7 @@ title: Projects
       <div class="card-body">
         <h5 class="card-title">Trajectory Optimization</h5>
         <p><span class="badge bg-info">Optimization</span> <span class="badge bg-dark">MATLAB</span></p>
-        <a href="/projects/project1" class="btn btn-sm btn-outline-primary">View Project</a>
+        <a href="/projects/AutoDrifting" class="btn btn-sm btn-outline-primary">View Project</a>
       </div>
     </div>
   </div>
