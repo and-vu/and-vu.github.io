@@ -11,10 +11,10 @@ permalink: /research/
     <div class="card shadow-sm mb-4">
       <img src="/assets/images/2025 AI Horizons Highlights-182.jpg" class="card-img-top" alt="Auto Drifting">
       <div class="card-body">
-        <h5 class="card-title">Trajectory Optimization</h5>
+        <h5 class="card-title">Snake Robots</h5>
         <p>
-          <span class="badge bg-info">Optimization</span>
-          <span class="badge bg-dark">MATLAB</span>
+          <span class="badge bg-info">Hardware</span>
+          <span class="badge bg-dark">Controls</span>
         </p>
         <a href="/research/snakerobot/" class="btn btn-sm btn-outline-primary">View Project</a>
       </div>
