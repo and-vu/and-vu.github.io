@@ -10,10 +10,10 @@ permalink: /projects/
     <div class="card shadow-sm mb-4">
       <img src="/assets/images/From Grip to Drift Model-Predictive Control for Autonomous Drifting on Scaled Racecars.png" class="card-img-top" alt="Auto Drifting">
       <div class="card-body">
-        <h5 class="card-title">Trajectory Optimization</h5>
+        <h5 class="card-title">Autonomous Drifting for F1-10th Car</h5>
         <p>
-          <span class="badge bg-info">Optimization</span>
-          <span class="badge bg-dark">MATLAB</span>
+          <span class="badge bg-info">Controls</span>
+          <span class="badge bg-dark">Julia</span>
         </p>
         <a href="/projects/autodrifting/" class="btn btn-sm btn-outline-primary">View Project</a>
       </div>
