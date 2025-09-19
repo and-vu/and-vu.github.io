@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Control Freaks
+permalink: /projects/autodrifting/
 ---
 # Trajectory Optimization for 12-DOF Robot Arm
 
