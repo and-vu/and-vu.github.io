@@ -13,7 +13,7 @@ permalink: /research/
       <div class="card-body">
         <h5 class="card-title">Snake Robot Locomotion</h5>
         <p><span class="badge bg-warning text-dark">Locomotion</span> <span class="badge bg-primary">Control</span></p>
-        <a href="/research/bass" class="btn btn-sm btn-outline-primary">View Research</a>
+        <a href="/research/bass/" class="btn btn-sm btn-outline-primary">View Research</a>
       </div>
     </div>
   </div>
