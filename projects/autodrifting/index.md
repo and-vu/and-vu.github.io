@@ -3,9 +3,9 @@ layout: default
 title: Control Freaks
 permalink: /projects/autodrifting/
 ---
-# Trajectory Optimization for 12-DOF Robot Arm
+# Autonomous Drifting for a F1-10th Car
 
-Developed a **model-free nonlinear trajectory optimization** algorithm for a 12 DOF robotic arm using a kinematic model.
+MPC for autonomous drifting strategy on an F1-10th vehicle on the Silverstone Track
 
 ## Media
 - ![Simulation](/assets/images/proj1-sim.gif)
