@@ -3,7 +3,8 @@ layout: default
 title: Research
 permalink: /research/
 ---
-# Projects
+# Research
+
 <div class="row">
   <!-- AutoDrifting Project Card -->
   <div class="col-md-4">
