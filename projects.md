@@ -18,7 +18,7 @@ permalink: /projects/
           <span class="badge bg-info">Optimization</span>
           <span class="badge bg-dark">MATLAB</span>
         </p>
-        <a href="projects/index.md/autodrifting" class="btn btn-sm btn-outline-primary">View Project</a>
+        <a href="projects/index.md/autodrifting/index.md" class="btn btn-sm btn-outline-primary">View Project</a>
       </div>
     </div>
   </div>
