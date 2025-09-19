@@ -15,7 +15,7 @@ permalink: /research/
           <span class="badge bg-info">Optimization</span>
           <span class="badge bg-dark">MATLAB</span>
         </p>
-        <a href="/research/snakerobots/" class="btn btn-sm btn-outline-primary">View Project</a>
+        <a href="/research/snakerobot/" class="btn btn-sm btn-outline-primary">View Project</a>
       </div>
     </div>
   </div>
