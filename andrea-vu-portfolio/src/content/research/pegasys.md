@@ -17,12 +17,14 @@ articles:
 
 Developed the proof-of-concept, development, and testing of the Precision and Extended Glide Airdrop System, a high-performance powered paraglider system designed for cargo delivery in contested environments. Project conducted in collaboration with the US Army's DEVCOM Soldier Center and Aerial Delivery Solutions.
 
-## Accomplishments
+---
 
-- Enhanced precision and range of airdrop operations, enabling accurate payload delivery over extended distances while reducing risk to aircrews
+## Key Accomplishments
 
-- Led and executed multiple flight tests to validate system performance across multiple test beds
+- **Enhanced precision and range** of airdrop operations, enabling accurate payload delivery over extended distances while reducing risk to aircrews
 
-- Analyzed flight data to assess paraglider performance viability and consistency, informing design improvements
+- **Led and executed multiple flight tests** to validate system performance across multiple test beds
 
-- Refined deployment strategies and assessed payload capacity under various deployment conditions
+- **Analyzed flight data** to assess paraglider performance viability and consistency, informing design improvements
+
+- **Refined deployment strategies** and assessed payload capacity under various deployment conditions
