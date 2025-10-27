@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+---
+
+<Layout title="Andrea Vu - Mechanical Engineer & Researcher">
+  <Navigation />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div class="order-2 lg:order-1">
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-6 text-gray-900 leading-tight">
+              Andrea Vu
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed font-medium">
+              Mechanical Engineering Graduate Student at Carnegie Mellon University
+            </p>
+
+            <div class="space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed">
+              <p>
+                Hi, I'm Andrea Vu.
+              </p>
+
+              <p>
+                I've been a professional student for four years (and counting!) and worked in industry for three years. I enjoy hands-on, experiment-focused research, which means piloting a robot to climb up peoples' legs or watching my experiment plummet out of the sky into the desert.
+              </p>
+
+              <p>
+                Working with my hands has always been a huge part of my life, whether it be shoving an aluminum can in the fusebox of a tractor or using a wall scraper to uncap honeycomb frames. Understanding the role that an object plays in a larger system, defining that role, then breaking that definition is what helps us to expand the capabilities of modern technology.
+              </p>
+
+              <p>
+                My research interests lie in hardware design and controls which led me to pursue my Bachelor's in Mechanical Engineering at Georgia Tech. While in undergrad, I worked and did research at Earthly Dynamics, where I specialized in aerial decelerators, specifically parafoils. I'm now pursuing my Master's Degree in Mechanical Engineering at Carnegie Mellon University with aspirations to earn my PhD.
+              </p>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <div class="relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl transform rotate-3"></div>
+              <img
+                src="/images/about/IMG_1935.JPG"
+                alt="Andrea Vu"
+                class="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-50 border-t border-gray-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-gray-900">Technical Skills</h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-3 text-lg">Programming</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Python, Matlab, Julia, Embedded C/C++</p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-3 text-lg">Rapid Prototyping</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">3D Printing, Laser Cutting, CNC Mill, Manual Mill, Sewing, Hand Tools, Soldering</p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-3 text-lg">Design</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Solidworks, KiCad, Altium, Fusion 360</p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-3 text-lg">Simulation</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">ROS1, pyBullet, COMSOL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
