@@ -8,9 +8,20 @@ endDate: "March 2022"
 order: 9
 ---
 
-As VP of Finance, I managed the budgeting, fundraising, and resource allocation that supported Students Organizing for Sustainability's (SOS) mission of promoting sustainable practices and urban gardening on campus via the community garden and other green initiatives. During my term, I oversaw the major 10x expansion of the community garden on Georgia Tech's campus and secured funding to equip it with the necessary supplies to support the expansion and increase the impact across the campus community.
+Managed budgeting, fundraising, and resource allocation to support Students Organizing for Sustainability's mission of promoting sustainable practices and urban gardening initiatives on campus. Oversaw financial planning for major community garden expansion project.
 
-## Accomplishments
+---
+
+## Responsibilities
+
+- Directed organizational budget planning and financial reporting to Student Organization Finance Office (SOFO)
+- Led fundraising efforts and grant application processes for sustainability initiatives
+- Managed resource allocation for community garden operations and expansion
+- Developed budget tracking systems to improve financial transparency and stewardship
+
+---
+
+## Key Accomplishments
 
 - Led fundraising efforts and submitted donation/grant applications that provided the financial means for SOS's garden expansion and urban, gardening projects
 

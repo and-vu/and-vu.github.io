@@ -8,9 +8,20 @@ endDate: "April 2026"
 order: 6
 ---
 
-As an avid racing enthusiast, I served as lead driver and active fabricator on the SAE Buggy Racing Team, building the vehicle that I race in, coordinating early-morning training, and engaging with sponsors and SAE alum. I laid carbon fiber, assembled the vehicle, and fostered team commitment by recruiting and organizing weekend volunteers and practice runners, while representing the team with alumni and sponsors to secure financial support and maintain good relations.
+Served as lead driver and active fabricator on the SAE Buggy Racing Team, participating in all aspects of vehicle construction, team coordination, and stakeholder engagement for Carnegie Mellon's historic racing tradition.
 
-## Accomplishments
+---
+
+## Responsibilities
+
+- Fabricated competition vehicle through carbon fiber layup and mechanical assembly
+- Coordinated early-morning training sessions with pushers and crew
+- Recruited and organized weekend volunteers for practice sessions
+- Engaged with alumni and sponsors to maintain relationships and secure financial support
+
+---
+
+## Key Accomplishments
 
 - Organized and motivated a crew of runners for early-morning weekend practice sessions, improving coordination between driver, pushers, and crew.
 

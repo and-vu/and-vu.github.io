@@ -11,4 +11,14 @@ order: 3
 
 **Disclaimer:** This is a work in progress.
 
-I am currently working to expand the locomotion versatility of snake robots by enabling them to explore non-simple, 3D environments through the development of a new gait. The gait allows segments of the robot's body to alternate between anchoring for stability or articulate for motion, enabling the robot to perform a hybrid mobility-manipulation behavior. The project emphasizes kinematic modelling, constraint-based optimization, and motion planning for complex environments.
+Developing a new gait to expand the locomotion versatility of snake robots for exploring non-simple, 3D environments through hybrid mobility-manipulation behavior.
+
+---
+
+## Current Focus
+
+- **Designing novel gait** that allows body segments to alternate between anchoring for stability and articulating for motion
+
+- **Developing kinematic modeling** and constraint-based optimization for complex environment navigation
+
+- **Implementing motion planning algorithms** for 3D environment exploration and obstacle traversal

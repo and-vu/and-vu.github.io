@@ -9,9 +9,20 @@ skills: ["3D Printing (FDM and Resin)", "Laser Cutting", "Laser Etching", "Manua
 order: 4
 ---
 
-As a Prototyping Instructor, I served as a hands-on mentor in one of the country's largest, student-run makerspace, guiding peers in operating advanced fabrication tools and overseeing safe project development. I helped to turn concepts into functional prototypes by helping students select proper fabrication methods, understand tool capabilities, and safely bring their visions to life.
+Served as a hands-on mentor in one of the nation's largest student-run makerspaces, guiding peers in operating advanced fabrication tools and overseeing safe project development across diverse engineering disciplines.
 
-## Accomplishments
+---
+
+## Responsibilities
+
+- Provided technical guidance on fabrication method selection and tool capabilities
+- Ensured safe operation of all makerspace equipment through training and supervision
+- Assisted students in translating design concepts into functional prototypes
+- Maintained equipment functionality and performed basic troubleshooting
+
+---
+
+## Key Accomplishments
 
 - Mentored 100+ students through hands-on tool-use and prototype phases, allowing their projects to transform from a concept into a tangible result
 

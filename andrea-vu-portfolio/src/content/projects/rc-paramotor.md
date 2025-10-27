@@ -9,11 +9,22 @@ featured: true
 order: 5
 ---
 
-Due to the proprietary nature of this project, the details of this work is limited to publicly released information.
+**Disclaimer:** Due to the proprietary nature of this project, details are limited to publicly released information.
 
-I designed and prototyped a custom, small-scale RC paramotor to serve as a versatile data collection platform for parafoil system identification. I utilized CAD modelling to back integrate the new, custom chassis onto a COTS hobbyist RC paramotor, expanding the COTS paramotor's abilities to better accommodate research needs. This platform enables controlled launches from the ground or aerial deployment, allowing pilots on the ground to steer and conduct repeated trials to better characterize parafoil deployment and inflation dynamics.
+Designed and prototyped a custom small-scale RC paramotor to serve as a versatile data collection platform for parafoil system identification and deployment dynamics research.
 
-## Accomplishments
+---
+
+## Platform Capabilities
+
+- Modified COTS hobbyist RC paramotor with custom payload integration
+- Enabled controlled launches from ground or aerial deployment
+- Supported remote piloting for repeated experimental trials
+- Designed for characterizing parafoil deployment and inflation dynamics
+
+---
+
+## Key Accomplishments
 
 - Modified a COTS hobbyist RC paramotor to accommodate custom payloads, expanding its suitability for controlled data collection in parafoil testing
 

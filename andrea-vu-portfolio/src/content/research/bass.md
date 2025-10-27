@@ -14,12 +14,16 @@ publications:
   - "Ward, D. J., Vu, A. L., Ward, M., and Costello, M., 'Bleed-Air Control of a Single Surface Parafoil Canopy,' American Institute of Aeronautics and Astronautics Inc, AIAA, 2022. https://doi.org/10.2514/6.2022-2716"
 ---
 
-In collaboration with Dr. Jeffrey Ward, I conducted experimental and computational studies on bleed-air actuation for single-surface parafoils, aiming to expand the control authority for precision airdrop applications. This research investigates the aerodynamic effects of strategically placed upper-surface vents on parafoil performance. Findings indicate that vent placement significantly influences turn rate and glide slope control, with optimal locations achieving up to 40 degree/second turn rates and 58% glide slope changes.
+In collaboration with Dr. Jeffrey Ward, conducted experimental and computational studies on bleed-air actuation for single-surface parafoils to expand control authority for precision airdrop applications.
 
-## Accomplishments
+---
 
-- Designed vent shapes for bleeding air, then altered small-scale parafoils based off results from computational model that simulated the effects of bleed-air spoilers on parafoil aerodynamics
+## Key Accomplishments
 
-- Conducted flight tests to assess the impact of vent placement on turn rate and glide slope control, providing empirical data to validate computational predictions
+- **Investigated aerodynamic effects** of strategically placed upper-surface vents on parafoil performance
 
-- Identified optimal vent locations at 10% chord position for maximizing control authority
+- **Designed and modified parafoils** based on computational model results simulating bleed-air spoiler effects on vent shapes and configurations
+
+- **Conducted flight tests** to assess the impact of vent placement on turn rate and glide slope control, providing empirical data to validate computational predictions
+
+- **Identified optimal vent locations** at 10% chord position, achieving up to **40 degree/second turn rates** and **58% glide slope changes**

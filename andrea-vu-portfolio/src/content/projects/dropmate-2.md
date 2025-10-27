@@ -9,11 +9,22 @@ featured: true
 order: 4
 ---
 
-Due to the proprietary nature of this project, the details of this work is limited to publicly released information.
+**Disclaimer:** Due to the proprietary nature of this project, details are limited to publicly released information.
 
-I designed and tested the O-ring and breathable vent for Dropmate 2, the parachute event logger, ensuring that the outer shell of the device met IP67 water egress standards in both fresh and saltwater environments. This involved developing a hermetic seal to protect sensitive electronics while allowing for gas permeability, which is crucial for accurate barometric pressure readings during jumps.
+Designed and validated the sealing and venting systems for Dropmate 2, an IP67-rated parachute event logger, ensuring reliable performance in diverse environmental conditions while maintaining accurate barometric pressure sensing.
 
-## Accomplishments
+---
+
+## Design Challenge
+
+Developed a dual-function sealing system that simultaneously:
+- Maintains IP67 waterproofing to protect sensitive electronics
+- Enables gas permeability for accurate barometric pressure readings during deployment
+- Functions reliably in both freshwater and saltwater environments
+
+---
+
+## Key Accomplishments
 
 - Designed a custom O-ring seal to maintain IP67 compliance, ensuring the device remained waterproof and dustproof when the parachute is being actively deployed, stored, or transported.
 

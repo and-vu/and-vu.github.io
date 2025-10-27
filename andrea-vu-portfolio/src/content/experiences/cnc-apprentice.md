@@ -9,9 +9,20 @@ skills: ["Manual Mill", "CAM", "Precision machining and fixturing", "Equipment m
 order: 5
 ---
 
-In addition to my role as a Prototyping Instructor, I supported the metal shop's CNC operations by programming, setting up, and maintaining milling equipment to assist students in translating their designs into precision-machined parts. In conjunction with the other Metal CNC apprentices and the Metal CNC Master, we upheld rigorous safety and quality standards while fostering hands-on fabrication learning for a wide variety of academic, research, and personal projects.
+Supported the metal shop's CNC operations by programming, setting up, and maintaining milling equipment to assist students in translating designs into precision-machined parts. Worked collaboratively with Metal CNC apprentices and Metal CNC Master to uphold rigorous safety and quality standards.
 
-## Accomplishments
+---
+
+## Responsibilities
+
+- Programmed and operated CNC mills for academic, research, and personal projects
+- Developed CAM toolpaths and optimized machining strategies in Fusion 360
+- Performed preventative maintenance and equipment diagnostics
+- Provided technical mentorship on fixturing, tooling selection, and machining best practices
+
+---
+
+## Key Accomplishments
 
 - Developed CAM in Fusion 360 for several prototype components, ensuring safe, successful, and accurate machining
 

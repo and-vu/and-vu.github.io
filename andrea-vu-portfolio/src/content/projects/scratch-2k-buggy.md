@@ -9,9 +9,19 @@ featured: true
 order: 2
 ---
 
-I participated in the full build of a competition-grade, man-powered "buggy" for Carnegie Mellon University's annual spring carnival. As the driver, the buggy was fit to my proportions. We built the buggy using a combination of carbon fiber and epoxy, followed by the addition of wheels, a custom steering and braking system, and push bar. The result was a lightweight, structurally sound vehicle optimized for speed, handling, and reliability when raced.
+Participated in the complete build of a competition-grade, human-powered racing vehicle for Carnegie Mellon University's annual Spring Carnival. As the designated driver, the vehicle was custom-fitted to my proportions for optimal performance.
 
-## Accomplishments
+---
+
+## Build Process
+
+- Constructed vehicle frame using carbon fiber and epoxy composite layup techniques
+- Integrated mechanical systems including wheels, bearings, custom steering and braking systems, and push bar assembly
+- Achieved lightweight, structurally sound design optimized for speed, handling, and race reliability
+
+---
+
+## Key Accomplishments
 
 - Designed a custom, interior mold based on driver dimensions, enabling an optimized fit and streamlined aerodynamics
 

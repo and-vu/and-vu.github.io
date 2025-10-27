@@ -9,9 +9,19 @@ featured: true
 order: 1
 ---
 
-I developed a dynamically accurate simulation platform for an F1-10th scale racecar to study high-performance control strategies such as line-following and autonomous drifting. By implementing a nonlinear vehicle dynamics model with a simplified Pacejka tire model and integrating a Model Predictive Controller (MPC), I optimized the F1-10th vehicle for stability, speed, and cross-track performance around the Silverstone Grand Prix circuit. I extended the framework to identify drift equilibrium points and transition between grip and drift modes through linearized Jacobian Models.
+Developed a dynamically accurate simulation platform for an F1-10th scale racecar to study high-performance control strategies including line-following and autonomous drifting.
 
-## Accomplishments
+---
+
+## Technical Approach
+
+- Implemented nonlinear vehicle dynamics model with simplified Pacejka tire model for realistic high-speed simulation
+- Integrated Model Predictive Controller (MPC) to optimize vehicle stability, speed, and cross-track performance on Silverstone Grand Prix circuit
+- Extended framework to identify drift equilibrium points and enable transitions between grip and drift modes through linearized Jacobian models
+
+---
+
+## Key Accomplishments
 
 - Designed and validated a nonlinear dynamic bicycle model incorporating Pacejka tire dynamics for realistic high-speed vehicle simulation
 

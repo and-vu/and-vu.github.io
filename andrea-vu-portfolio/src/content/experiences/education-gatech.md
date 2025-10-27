@@ -9,8 +9,22 @@ location: "Atlanta, GA"
 order: 2
 ---
 
-**Highest Honors**
+**Highest Honors** | Graduated December 2022
 
-Graduated December 2022
+---
 
-Focused on hardware design, controls, and robotics. Gained extensive hands-on experience through the Invention Studio makerspace and research at Earthly Dynamics.
+## Focus Areas
+
+- Hardware design and rapid prototyping
+- Controls systems and robotics
+- Experimental research methodologies
+
+---
+
+## Notable Experience
+
+- Extensive hands-on fabrication experience through the Invention Studio, one of the nation's largest student-run makerspaces
+
+- Concurrent research position at Earthly Dynamics, focusing on parafoil aerodynamics and deployment systems
+
+- Specialized coursework in mechanical design, controls theory, and experimental methods

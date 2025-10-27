@@ -9,9 +9,27 @@ featured: true
 order: 3
 ---
 
-I did the mechanical and electrical design of the remote control for the Hasselhoff Bot, a small, teleoperated underwater robot inspired by David Hasselhoff's cameo in *The SpongeBob SquarePants Movie.* This project was part of the Advanced Mechatronic Design class at CMU. The robot is equipped with four waterproof motors, an IR beam receiver, and a tethered remote control, allowing users to navigate underwater and land on an IR beam. The remote control has 5 LEDs indicating the state of the submarine, two joysticks to allow the user to steer the submarine, a read out of the time elapsed since start, a read out of the current depth of the submarine, and a knob to set the desired depth.
+Designed the mechanical and electrical systems for the remote control of Hasselhoff Bot, a teleoperated underwater robot developed for Carnegie Mellon University's Advanced Mechatronic Design course. Inspired by David Hasselhoff's cameo in *The SpongeBob SquarePants Movie*, this project demonstrates integrated embedded systems design and underwater robotics.
 
-## Accomplishments
+---
+
+## System Overview
+
+**Robot Capabilities:**
+- Four waterproof motors for underwater navigation
+- IR beam receiver for autonomous landing
+- Tethered remote control for real-time operation
+
+**Remote Control Features:**
+- 5 LED state indicators for submarine status monitoring
+- Dual joystick interface for navigation control
+- Elapsed time display since mission start
+- Current depth readout
+- Potentiometer for desired depth setting
+
+---
+
+## Key Accomplishments
 
 - Designed and developed the electrical schematic for the remote control to include 5 LEDs, 2 joysticks, an LED display, and a potentiometer.
 
