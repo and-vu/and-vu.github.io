@@ -3,33 +3,33 @@ import Layout from '../../layouts/Layout.astro';
 import Navigation from '../../components/Navigation.astro';
 import { getCollection } from 'astro:content';
 
-const projects = (await getCollection('projects')).sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
+const extracurriculars = (await getCollection('extracurriculars')).sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 ---
 
-<Layout title="Projects - Andrea Vu">
+<Layout title="Extracurriculars - Andrea Vu">
   <Navigation />
 
   <main class="min-h-screen bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
       <!-- Header -->
       <div class="mb-16">
-        <h1 class="text-5xl sm:text-6xl font-extrabold mb-6 text-gray-900 leading-tight">Projects</h1>
+        <h1 class="text-5xl sm:text-6xl font-extrabold mb-6 text-gray-900 leading-tight">Extracurriculars</h1>
         <p class="text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-3xl">
-          A collection of technical projects spanning controls, embedded systems, and mechanical design.
+          Leadership roles, team activities, and community involvement beyond the classroom.
         </p>
       </div>
 
-      <!-- Projects Grid -->
+      <!-- Extracurriculars Grid -->
       <div class="space-y-12 lg:space-y-16">
-        {projects.map((project) => (
+        {extracurriculars.map((activity) => (
           <article class="group">
-            <a href={`/projects/${project.slug}`} class="block">
-              <div class="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 hover:border-blue-200 hover:shadow-lg hover:bg-blue-50/30 transition-all duration-300">
-                {project.data.image && (
+            <a href={`/extracurriculars/${activity.slug}`} class="block">
+              <div class="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 hover:border-purple-200 hover:shadow-lg transition-all duration-300">
+                {activity.data.image && (
                   <div class="overflow-hidden rounded-xl bg-gray-100 h-64 lg:h-auto">
                     <img
-                      src={project.data.image}
-                      alt={project.data.title}
+                      src={activity.data.image}
+                      alt={activity.data.title}
                       class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
@@ -37,23 +37,23 @@ const projects = (await getCollection('projects')).sort((a, b) => (a.data.order 
 
                 <div class="flex flex-col justify-center space-y-4">
                   <div>
-                    <h2 class="text-3xl lg:text-4xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">
-                      {project.data.title}
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-3 text-gray-900 group-hover:text-purple-600 transition-colors leading-tight">
+                      {activity.data.title}
                     </h2>
 
+                    <p class="text-lg font-semibold text-gray-700 mb-2">
+                      {activity.data.organization} • {activity.data.role}
+                    </p>
+
                     <p class="text-sm font-medium text-gray-500 mb-4">
-                      {project.data.date} {project.data.location && `• ${project.data.location}`}
+                      {activity.data.startDate}{activity.data.endDate ? ` - ${activity.data.endDate}` : ' - Present'} {activity.data.location && `• ${activity.data.location}`}
                     </p>
                   </div>
 
-                  <p class="text-gray-700 text-lg leading-relaxed">
-                    {project.data.description}
-                  </p>
-
-                  {project.data.skills && project.data.skills.length > 0 && (
+                  {activity.data.skills && activity.data.skills.length > 0 && (
                     <div class="flex flex-wrap gap-2 pt-2">
-                      {project.data.skills.map((skill) => (
-                        <span class="px-3 py-1.5 bg-blue-50 text-blue-700 text-sm font-medium rounded-lg">
+                      {activity.data.skills.map((skill) => (
+                        <span class="px-3 py-1.5 bg-purple-50 text-purple-700 text-sm font-medium rounded-lg">
                           {skill}
                         </span>
                       ))}
@@ -62,7 +62,7 @@ const projects = (await getCollection('projects')).sort((a, b) => (a.data.order 
 
                   <div class="pt-2">
                     <span class="inline-flex items-center text-gray-900 font-semibold group-hover:gap-2 transition-all">
-                      View Project
+                      View Details
                       <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
@@ -74,6 +74,13 @@ const projects = (await getCollection('projects')).sort((a, b) => (a.data.order 
           </article>
         ))}
       </div>
+
+      {extracurriculars.length === 0 && (
+        <div class="text-center py-16">
+          <p class="text-xl text-gray-500">No extracurricular activities yet. Check back soon!</p>
+        </div>
+      )}
     </div>
   </main>
 </Layout>
+

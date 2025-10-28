@@ -36,7 +36,7 @@ const { Content } = await research.render();
             {research.data.title}
           </h1>
 
-          <div class="grid sm:grid-cols-3 gap-6 mb-10 p-6 bg-gray-50 rounded-xl border border-gray-200">
+          <div class="grid sm:grid-cols-3 gap-6 mb-10 p-6 bg-green-50 rounded-xl border border-green-200">
             <div>
               <p class="text-sm font-semibold text-gray-500 mb-1">Period</p>
               <p class="text-base text-gray-900 font-medium">{research.data.startDate} - {research.data.endDate || 'Present'}</p>
@@ -75,11 +75,11 @@ const { Content } = await research.render();
         </div>
 
         {research.data.publications && research.data.publications.length > 0 && (
-          <div class="mt-16 pt-12 border-t-2 border-gray-200">
+          <div class="mt-16 pt-12 border-t-2 border-green-200">
             <h2 class="text-3xl font-bold mb-8 text-gray-900">Publications</h2>
             <ul class="space-y-6">
               {research.data.publications.map((pub) => (
-                <li class="pl-6 border-l-4 border-gray-200 text-gray-700 text-base leading-relaxed">{pub}</li>
+                <li class="pl-6 border-l-4 border-green-200 text-gray-700 text-base leading-relaxed">{pub}</li>
               ))}
             </ul>
           </div>

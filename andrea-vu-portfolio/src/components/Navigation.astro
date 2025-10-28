@@ -64,6 +64,19 @@ const currentPath = Astro.url.pathname;
             Experience
           </a>
         </li>
+        <li>
+          <a
+            href="/extracurriculars"
+            class:list={[
+              "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
+              currentPath.startsWith("/extracurriculars")
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            Extracurriculars
+          </a>
+        </li>
         <li class="ml-2">
           <a
             href="/Vu_Andy_Resume.pdf"
@@ -141,6 +154,19 @@ const currentPath = Astro.url.pathname;
             ]}
           >
             Experience
+          </a>
+        </li>
+        <li>
+          <a
+            href="/extracurriculars"
+            class:list={[
+              "block px-4 py-3 rounded-lg text-sm font-medium transition-all",
+              currentPath.startsWith("/extracurriculars")
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            Extracurriculars
           </a>
         </li>
         <li>

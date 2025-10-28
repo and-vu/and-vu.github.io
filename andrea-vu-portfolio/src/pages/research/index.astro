@@ -24,7 +24,7 @@ const research = (await getCollection('research')).sort((a, b) => (a.data.order 
         {research.map((item) => (
           <article class="group">
             <a href={`/research/${item.slug}`} class="block">
-              <div class="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 hover:border-gray-300 hover:shadow-lg transition-all duration-300">
+              <div class="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 hover:border-green-200 hover:shadow-lg hover:bg-green-50/30 transition-all duration-300">
                 {item.data.image && (
                   <div class="overflow-hidden rounded-xl bg-gray-100 h-64 lg:h-auto">
                     <img
@@ -37,7 +37,7 @@ const research = (await getCollection('research')).sort((a, b) => (a.data.order 
 
                 <div class="flex flex-col justify-center space-y-4">
                   <div>
-                    <h2 class="text-3xl lg:text-4xl font-bold mb-3 text-gray-900 group-hover:text-gray-700 transition-colors leading-tight">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-3 text-gray-900 group-hover:text-green-600 transition-colors leading-tight">
                       {item.data.title}
                     </h2>
 
@@ -57,11 +57,11 @@ const research = (await getCollection('research')).sort((a, b) => (a.data.order 
                   </p>
 
                   {item.data.publications && item.data.publications.length > 0 && (
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg w-fit">
-                      <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-green-50 rounded-lg w-fit">
+                      <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                       </svg>
-                      <span class="text-sm font-medium text-gray-700">
+                      <span class="text-sm font-medium text-green-700">
                         {item.data.publications.length} publication{item.data.publications.length > 1 ? 's' : ''}
                       </span>
                     </div>
