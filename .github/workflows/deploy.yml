@@ -24,7 +24,6 @@ jobs:
         uses: withastro/action@v2
         with:
           path: ./andrea-vu-portfolio
-          site: https://and-vu.github.io
           node-version: 20
 
   deploy:
