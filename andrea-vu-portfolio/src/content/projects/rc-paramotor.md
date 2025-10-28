@@ -1,7 +1,7 @@
 ---
 title: "Small-Scale RC Paramotor"
 description: "Designed and prototyped a custom, small-scale RC paramotor to serve as a versatile data collection platform for parafoil system identification."
-date: "August 2022 -- December 2022"
+date: "August 2022 - December 2022"
 location: "Earthly Dynamics"
 skills: ["CAD", "Motor and Gearbox selection", "Power electronics", "Rapid prototyping", "Electronics layout", "Sensor selection"]
 image: "/images/projects/rc-paramotor/cover.jpg"

@@ -1,7 +1,7 @@
 ---
 title: "Hasselhoff Bot"
 description: "Mechanical and electrical design of a remote control for a small, teleoperated underwater robot inspired by David Hasselhoff's cameo in The SpongeBob SquarePants Movie."
-date: "August 2024 -- December 2024"
+date: "August 2024 - December 2024"
 location: "Carnegie Mellon University"
 skills: ["Embedded Systems", "Mechanical Design", "CAD modelling", "Electrical Design"]
 image: "/images/projects/hasselhoff-bot/cover.jpg"

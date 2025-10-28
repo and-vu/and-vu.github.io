@@ -1,7 +1,7 @@
 ---
 title: "MPC for F1-10th Vehicle"
 description: "Developed a dynamically accurate simulation platform for an F1-10th scale racecar to study high-performance control strategies such as line-following and autonomous drifting."
-date: "January 2025 -- May 2025"
+date: "January 2025 - May 2025"
 location: "Optimal Controls and Reinforcement Learning"
 skills: ["Nonlinear Dynamics", "System Linearization", "Julia", "Simulation"]
 image: "/images/projects/mpc-f1-tenth/cover.png"
