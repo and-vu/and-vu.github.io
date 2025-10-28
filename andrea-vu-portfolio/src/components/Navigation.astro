@@ -1,0 +1,169 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="/" class="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors tracking-tight">
+        Andrea Vu
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex gap-1 items-center">
+        <li>
+          <a
+            href="/"
+            class:list={[
+              "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
+              currentPath === "/"
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="/research"
+            class:list={[
+              "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
+              currentPath.startsWith("/research")
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            Research
+          </a>
+        </li>
+        <li>
+          <a
+            href="/projects"
+            class:list={[
+              "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
+              currentPath.startsWith("/projects")
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            href="/experience"
+            class:list={[
+              "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
+              currentPath.startsWith("/experience")
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            Experience
+          </a>
+        </li>
+        <li class="ml-2">
+          <a
+            href="/Vu_Andy_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-2 bg-gray-900 text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-all duration-200 shadow-sm hover:shadow"
+          >
+            CV
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4 pt-2">
+      <ul class="space-y-1">
+        <li>
+          <a
+            href="/"
+            class:list={[
+              "block px-4 py-3 rounded-lg text-sm font-medium transition-all",
+              currentPath === "/"
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="/research"
+            class:list={[
+              "block px-4 py-3 rounded-lg text-sm font-medium transition-all",
+              currentPath.startsWith("/research")
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            Research
+          </a>
+        </li>
+        <li>
+          <a
+            href="/projects"
+            class:list={[
+              "block px-4 py-3 rounded-lg text-sm font-medium transition-all",
+              currentPath.startsWith("/projects")
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            href="/experience"
+            class:list={[
+              "block px-4 py-3 rounded-lg text-sm font-medium transition-all",
+              currentPath.startsWith("/experience")
+                ? "bg-gray-100 text-gray-900"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+            ]}
+          >
+            Experience
+          </a>
+        </li>
+        <li>
+          <a
+            href="/Vu_Andy_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block px-4 py-3 bg-gray-900 text-white rounded-lg text-sm font-medium text-center hover:bg-gray-800 transition-all"
+          >
+            CV
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Mobile menu toggle
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

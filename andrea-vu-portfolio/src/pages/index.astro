@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+---
+
+<Layout title="Andrea Vu - Mechanical Engineer & Researcher">
+  <Navigation />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div class="order-2 lg:order-1">
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-6 text-gray-900 leading-tight">
+              Andrea Vu
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed font-medium">
+              Mechanical Engineering Graduate Student at Carnegie Mellon University
+            </p>
+
+            <div class="space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed">
+              <p>
+                Hi, I'm Andrea Vu.
+              </p>
+
+              <p>
+                I've been a professional student for four years (and counting!) and worked in industry for three years. I enjoy hands-on, experiment-focused research, which means piloting a robot to climb up peoples' legs or watching my experiment plummet out of the sky into the desert.
+              </p>
+
+              <p>
+                Working with my hands has always been a huge part of my life, whether it be shoving an aluminum can in the fusebox of a tractor or using a wall scraper to uncap honeycomb frames. Understanding the role that an object plays in a larger system, defining that role, then breaking that definition is what helps us to expand the capabilities of modern technology.
+              </p>
+
+              <p>
+                My research interests lie in hardware design and controls which led me to pursue my Bachelor's in Mechanical Engineering at Georgia Tech. While in undergrad, I worked and did research at Earthly Dynamics, where I specialized in aerial decelerators, specifically parafoils. I'm now pursuing my Master's Degree in Mechanical Engineering at Carnegie Mellon University with aspirations to earn my PhD.
+              </p>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <div class="relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl transform rotate-3"></div>
+              <img
+                src="/images/about/IMG_1935.JPG"
+                alt="Andrea Vu"
+                class="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-50 border-t border-gray-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-gray-900">Technical Skills</h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-2 text-base">Programming</h3>
+            <p class="text-gray-600 text-sm">Python, Matlab, Julia, Embedded C/C++</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-2 text-base">Rapid Prototyping</h3>
+            <p class="text-gray-600 text-sm">3D Printing, Laser Cutting, CNC Mill, Manual Mill, Sewing, Hand Tools, Soldering</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-2 text-base">Design</h3>
+            <p class="text-gray-600 text-sm">Solidworks, KiCad, Altium, Fusion 360</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-2 text-base">Simulation</h3>
+            <p class="text-gray-600 text-sm">ROS1, pyBullet, COMSOL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

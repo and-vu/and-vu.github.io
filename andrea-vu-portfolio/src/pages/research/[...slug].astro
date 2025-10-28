@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const research = await getCollection('research');
+  return research.map((item) => ({
+    params: { slug: item.slug },
+    props: { research: item },
+  }));
+}
+
+const { research } = Astro.props;
+const { Content } = await research.render();
+---
+
+<Layout title={`${research.data.title} - Andrea Vu`}>
+  <Navigation />
+
+  <main class="min-h-screen bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <article>
+        <header class="mb-12 lg:mb-16">
+          <a
+            href="/research"
+            class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mb-8 group"
+          >
+            <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            <span class="font-medium">Back to Research</span>
+          </a>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 leading-tight">
+            {research.data.title}
+          </h1>
+
+          <div class="grid sm:grid-cols-3 gap-6 mb-10 p-6 bg-gray-50 rounded-xl border border-gray-200">
+            <div>
+              <p class="text-sm font-semibold text-gray-500 mb-1">Period</p>
+              <p class="text-base text-gray-900 font-medium">{research.data.startDate} - {research.data.endDate || 'Present'}</p>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-gray-500 mb-1">Research Advisor</p>
+              <p class="text-base text-gray-900 font-medium">{research.data.advisor}</p>
+            </div>
+            <div class="sm:col-span-3">
+              <p class="text-sm font-semibold text-gray-500 mb-1">Research Area</p>
+              <p class="text-base text-gray-900 font-medium">{research.data.area}</p>
+            </div>
+          </div>
+
+          {research.data.image && (
+            <div class="rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={research.data.image}
+                alt={research.data.title}
+                class="w-full h-auto"
+              />
+            </div>
+          )}
+        </header>
+
+        <div class="prose prose-lg prose-gray max-w-none
+          prose-headings:font-bold prose-headings:tracking-tight
+          prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
+          prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
+          prose-p:text-gray-700 prose-p:leading-relaxed prose-p:text-lg prose-p:my-6
+          prose-ul:text-gray-700 prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
+          prose-li:my-3 prose-li:text-lg prose-li:leading-relaxed
+          prose-strong:text-gray-900 prose-strong:font-semibold
+          prose-hr:my-12 prose-hr:border-gray-300">
+          <Content />
+        </div>
+
+        {research.data.publications && research.data.publications.length > 0 && (
+          <div class="mt-16 pt-12 border-t-2 border-gray-200">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900">Publications</h2>
+            <ul class="space-y-6">
+              {research.data.publications.map((pub) => (
+                <li class="pl-6 border-l-4 border-gray-200 text-gray-700 text-base leading-relaxed">{pub}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {research.data.articles && research.data.articles.length > 0 && (
+          <div class="mt-16 pt-12 border-t-2 border-gray-200">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900">Articles</h2>
+            <ul class="space-y-4">
+              {research.data.articles.map((article) => (
+                <li>
+                  <a
+                    href={article}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-gray-900 hover:text-gray-600 text-base underline decoration-2 underline-offset-4 break-all transition-colors"
+                  >
+                    {article}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </article>
+    </div>
+  </main>
+</Layout>
