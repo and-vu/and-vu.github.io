@@ -56,23 +56,23 @@ if (currentIndex < items.length - 1) {
       {relatedItems.map((item) => (
         <a
           href={`${basePath}/${item.slug}`}
-          class="group block bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-gray-400 transition-all duration-200 hover:shadow-lg"
+          class="group block bg-white border-2 border-gray-100 rounded-xl overflow-hidden hover:border-blue-300 shadow-soft hover-lift transition-all duration-300"
         >
           {item.data.image && (
-            <div class="aspect-video overflow-hidden bg-gray-100">
+            <div class="aspect-video overflow-hidden bg-gray-50 ring-1 ring-gray-200">
               <img
                 src={item.data.image}
                 alt={item.data.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
             </div>
           )}
           <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-gray-700 transition-colors mb-2">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 mb-2 tracking-tight">
               {item.data.shortTitle || item.data.title}
             </h3>
             {item.data.description && (
-              <p class="text-gray-600 text-sm line-clamp-2">
+              <p class="text-gray-600 text-sm line-clamp-2 leading-relaxed">
                 {item.data.description}
               </p>
             )}

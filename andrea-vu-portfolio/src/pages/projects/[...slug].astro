@@ -29,26 +29,26 @@ const sortedProjects = allProjects.sort((a, b) => (a.data.order || 999) - (b.dat
         <header class="mb-12 lg:mb-16">
           <a
             href="/projects"
-            class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mb-8 group"
+            class="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-all duration-200 mb-8 group px-3 py-2 -ml-3 rounded-lg hover:bg-blue-50"
           >
-            <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
-            <span class="font-medium">Back to Projects</span>
+            <span class="font-semibold">Back to Projects</span>
           </a>
 
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 text-gray-900 leading-tight">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 text-gray-900 leading-tight tracking-tight">
             {project.data.title}
           </h1>
 
-          <p class="text-lg sm:text-xl text-gray-600 mb-6 font-medium">
+          <p class="text-lg sm:text-xl text-gray-600 mb-6 font-semibold tracking-wide uppercase">
             {project.data.date} {project.data.location && `• ${project.data.location}`}
           </p>
 
           {project.data.skills && project.data.skills.length > 0 && (
             <div class="flex flex-wrap gap-2 mb-10">
               {project.data.skills.map((skill) => (
-                <span class="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-medium rounded-lg">
+                <span class="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-medium rounded-lg border border-blue-100 transition-colors hover:bg-blue-100">
                   {skill}
                 </span>
               ))}
@@ -56,7 +56,7 @@ const sortedProjects = allProjects.sort((a, b) => (a.data.order || 999) - (b.dat
           )}
 
           {project.data.image && (
-            <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <div class="rounded-2xl overflow-hidden shadow-soft-xl ring-1 ring-gray-200">
               <img
                 src={project.data.image}
                 alt={project.data.title}

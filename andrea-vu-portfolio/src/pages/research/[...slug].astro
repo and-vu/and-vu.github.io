@@ -29,35 +29,35 @@ const sortedResearch = allResearch.sort((a, b) => (a.data.order || 999) - (b.dat
         <header class="mb-12 lg:mb-16">
           <a
             href="/research"
-            class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mb-8 group"
+            class="inline-flex items-center gap-2 text-gray-600 hover:text-green-600 transition-all duration-200 mb-8 group px-3 py-2 -ml-3 rounded-lg hover:bg-green-50"
           >
-            <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
-            <span class="font-medium">Back to Research</span>
+            <span class="font-semibold">Back to Research</span>
           </a>
 
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 leading-tight">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 leading-tight tracking-tight">
             {research.data.title}
           </h1>
 
-          <div class="grid sm:grid-cols-3 gap-6 mb-10 p-6 bg-green-50 rounded-xl border border-green-200">
+          <div class="grid sm:grid-cols-3 gap-6 mb-10 p-6 bg-green-50/50 rounded-xl border-2 border-green-100 shadow-soft">
             <div>
-              <p class="text-sm font-semibold text-gray-500 mb-1">Period</p>
-              <p class="text-base text-gray-900 font-medium">{research.data.startDate} - {research.data.endDate || 'Present'}</p>
+              <p class="text-xs font-bold text-gray-500 mb-2 uppercase tracking-wider">Period</p>
+              <p class="text-base text-gray-900 font-semibold">{research.data.startDate} - {research.data.endDate || 'Present'}</p>
             </div>
             <div>
-              <p class="text-sm font-semibold text-gray-500 mb-1">Research Advisor</p>
-              <p class="text-base text-gray-900 font-medium">{research.data.advisor}</p>
+              <p class="text-xs font-bold text-gray-500 mb-2 uppercase tracking-wider">Research Advisor</p>
+              <p class="text-base text-gray-900 font-semibold">{research.data.advisor}</p>
             </div>
             <div class="sm:col-span-3">
-              <p class="text-sm font-semibold text-gray-500 mb-1">Research Area</p>
-              <p class="text-base text-gray-900 font-medium">{research.data.area}</p>
+              <p class="text-xs font-bold text-gray-500 mb-2 uppercase tracking-wider">Research Area</p>
+              <p class="text-base text-gray-900 font-semibold">{research.data.area}</p>
             </div>
           </div>
 
           {research.data.image && (
-            <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <div class="rounded-2xl overflow-hidden shadow-soft-xl ring-1 ring-gray-200">
               <img
                 src={research.data.image}
                 alt={research.data.title}
