@@ -22,3 +22,21 @@ Developing a new gait to expand the locomotion versatility of snake robots for e
 - **Developing kinematic modeling** and constraint-based optimization for complex environment navigation
 
 - **Implementing motion planning algorithms** for 3D environment exploration and obstacle traversal
+
+---
+
+## Demonstrations
+
+### Jamming Demonstration
+
+<video width="100%" controls>
+  <source src="/videos/5x_JammingDemo_SSTI_Q1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### 2D Jamming Behavior
+
+<video width="100%" controls>
+  <source src="/videos/SEA_2D_jam_3x (1).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

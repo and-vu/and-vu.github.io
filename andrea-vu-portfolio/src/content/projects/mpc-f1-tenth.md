@@ -4,7 +4,7 @@ description: "Developed a dynamically accurate simulation platform for an F1-10t
 date: "January 2025 - May 2025"
 location: "Optimal Controls and Reinforcement Learning"
 skills: ["Nonlinear Dynamics", "System Linearization", "Julia", "Simulation"]
-image: "/images/projects/mpc-f1-tenth/cover.png"
+image: "/images/projects/mpc-f1-tenth/From Grip to Drift Model-Predictive Control for Autonomous Drifting on Scaled Racecars(2).png"
 featured: true
 order: 1
 ---
