@@ -2,10 +2,11 @@
 title: "Metal CNC Apprentice"
 organization: "Flower's Invention Studio"
 role: "Metal CNC Apprentice"
+type: "extracurricular"
 startDate: "January 2021"
 endDate: "December 2022"
 skills: ["Manual Mill", "CAM", "Precision machining and fixturing", "Equipment maintenance and diagnosis", "CNC Programming", "Design for Manufacturing"]
-order: 3
+order: 12
 ---
 
 Supported the metal shop's CNC operations by programming, setting up, and maintaining milling equipment to assist students in translating designs into precision-machined parts. Worked collaboratively with Metal CNC apprentices and Metal CNC Master to uphold rigorous safety and quality standards.
@@ -28,4 +29,3 @@ Supported the metal shop's CNC operations by programming, setting up, and mainta
 - Programmed and operated CNC mills for student projects, including creating soft jaws for work-holding, choosing appropriate surface finishes, and proper tooling choices
 
 - Performed preventative maintenance and diagnosed issues on CNC equipment, identifying tolerancing issues, axis calibration, and tool wear
-

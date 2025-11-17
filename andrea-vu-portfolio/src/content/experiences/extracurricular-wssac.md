@@ -2,9 +2,10 @@
 title: "Student Advisory Committee Member"
 organization: "Woodruff School Student Advisory Committee"
 role: "Committee Member"
+type: "extracurricular"
 startDate: "August 2020"
 endDate: "December 2022"
-order: 4
+order: 13
 ---
 
 Served as student representative on the Woodruff School Student Advisory Committee, acting as liaison between students and faculty to shape policies and initiatives that enhance the Mechanical Engineering student experience.
@@ -27,4 +28,3 @@ Served as student representative on the Woodruff School Student Advisory Committ
 - Spearheaded efforts to improve communication between students and faculty
 
 - Collaborated with committee members to review and refine school policy drafts, helping ensure that student needs were incorporated into final approvals
-

@@ -1,0 +1,84 @@
+---
+interface Item {
+  slug: string;
+  data: {
+    title: string;
+    shortTitle?: string;
+    image?: string;
+    description?: string;
+  };
+}
+
+interface Props {
+  items: Item[];
+  currentSlug: string;
+  basePath: string;
+  sectionTitle: string;
+}
+
+const { items, currentSlug, basePath, sectionTitle } = Astro.props;
+
+// Find current index
+const currentIndex = items.findIndex(item => item.slug === currentSlug);
+
+// Get related items (next 2 or previous items if at the end)
+let relatedItems: Item[] = [];
+if (currentIndex < items.length - 1) {
+  // Show next items
+  relatedItems = items.slice(currentIndex + 1, currentIndex + 3);
+  // If we don't have 2 items, add from beginning
+  if (relatedItems.length < 2 && items.length >= 2) {
+    const remaining = 2 - relatedItems.length;
+    relatedItems = [...relatedItems, ...items.slice(0, remaining).filter(item => item.slug !== currentSlug)];
+  }
+} else {
+  // At the end, show first 2 items
+  relatedItems = items.slice(0, 2).filter(item => item.slug !== currentSlug);
+}
+---
+
+{relatedItems.length > 0 && (
+  <section class="mt-20 pt-12 border-t-2 border-gray-200">
+    <div class="mb-8 flex items-center justify-between">
+      <h2 class="text-3xl font-bold text-gray-900">Explore More {sectionTitle}</h2>
+      <a
+        href={basePath}
+        class="text-gray-600 hover:text-gray-900 font-medium transition-colors flex items-center gap-2 group"
+      >
+        <span>View All</span>
+        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      {relatedItems.map((item) => (
+        <a
+          href={`${basePath}/${item.slug}`}
+          class="group block bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-gray-400 transition-all duration-200 hover:shadow-lg"
+        >
+          {item.data.image && (
+            <div class="aspect-video overflow-hidden bg-gray-100">
+              <img
+                src={item.data.image}
+                alt={item.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          )}
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 group-hover:text-gray-700 transition-colors mb-2">
+              {item.data.shortTitle || item.data.title}
+            </h3>
+            {item.data.description && (
+              <p class="text-gray-600 text-sm line-clamp-2">
+                {item.data.description}
+              </p>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

@@ -47,25 +47,8 @@ const research = defineCollection({
   }),
 });
 
-const extracurriculars = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    organization: z.string(),
-    role: z.string(),
-    startDate: z.string(),
-    endDate: z.string().optional(),
-    location: z.string().optional(),
-    skills: z.array(z.string()).optional(),
-    image: z.string().optional(),
-    featured: z.boolean().default(false),
-    order: z.number().optional(),
-  }),
-});
-
 export const collections = {
   projects,
   experiences,
   research,
-  extracurriculars,
 };

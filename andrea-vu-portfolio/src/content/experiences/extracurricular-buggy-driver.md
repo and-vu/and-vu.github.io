@@ -2,9 +2,10 @@
 title: "Buggy Driver"
 organization: "SAE Buggy Team"
 role: "Driver and Fabricator"
+type: "extracurricular"
 startDate: "January 2025"
 endDate: "April 2026"
-order: 1
+order: 10
 ---
 
 Served as lead driver and active fabricator on the SAE Buggy Racing Team, participating in all aspects of vehicle construction, team coordination, and stakeholder engagement for Carnegie Mellon's historic racing tradition.
@@ -27,4 +28,3 @@ Served as lead driver and active fabricator on the SAE Buggy Racing Team, partic
 - Engaged with SAE alumni and sponsors to showcase the new buggy, expressed team appreciation, and strengthened sponsorship relationships to support budget and material contributions
 
 - Placed 11th in Women's and 13th in Men's Races for 2025 Carnival (First time racing)
-

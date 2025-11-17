@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Navigation from '../../components/Navigation.astro';
+import RelatedItems from '../../components/RelatedItems.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -13,6 +14,10 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 const { Content } = await project.render();
+
+// Get all projects sorted by order for related items
+const allProjects = await getCollection('projects');
+const sortedProjects = allProjects.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 ---
 
 <Layout title={`${project.data.title} - Andrea Vu`}>
@@ -72,6 +77,13 @@ const { Content } = await project.render();
           prose-hr:my-12 prose-hr:border-gray-300">
           <Content />
         </div>
+
+        <RelatedItems
+          items={sortedProjects}
+          currentSlug={project.slug}
+          basePath="/projects"
+          sectionTitle="Projects"
+        />
       </article>
     </div>
   </main>

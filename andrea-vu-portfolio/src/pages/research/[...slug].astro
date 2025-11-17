@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Navigation from '../../components/Navigation.astro';
+import RelatedItems from '../../components/RelatedItems.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -13,6 +14,10 @@ export async function getStaticPaths() {
 
 const { research } = Astro.props;
 const { Content } = await research.render();
+
+// Get all research sorted by order for related items
+const allResearch = await getCollection('research');
+const sortedResearch = allResearch.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 ---
 
 <Layout title={`${research.data.title} - Andrea Vu`}>
@@ -104,6 +109,13 @@ const { Content } = await research.render();
             </ul>
           </div>
         )}
+
+        <RelatedItems
+          items={sortedResearch}
+          currentSlug={research.slug}
+          basePath="/research"
+          sectionTitle="Research"
+        />
       </article>
     </div>
   </main>
